@@ -1,16 +1,15 @@
 
-// Function to generate an array of numbers from start to end (inclusive)
 function generateArray(start, end) {
-    // Initialize an empty array to store the generated numbers
+    // Initialize an empty array to store the  numbers
     let arr = [];
     
-    // Loop from start to end (inclusive)
+    // Loop from the start number to the end number(inclusive)
     for (let i = start; i <= end; i++) {
-        // Push each number to the array
-        arr.push(i);
+        // Add each number to the array
+        numbers.push(i);
     }
     // Return the generated array
-    return arr;
+    return numbers;
 }
 
 console.log(generateArray(4, 7)); // [4, 5, 6, 7]

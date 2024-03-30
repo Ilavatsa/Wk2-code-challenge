@@ -1,10 +1,10 @@
 // Function to check if a number is prime
-function isPrime(num) {
-    // Prime numbers are greater than 1
-    if (num < 2) return false;
+function filterPrimes(numbers) {
+    //Empty array to store prime numbers
+    let primes = [];
     
     // Loop through all numbers from 2 to the square root of the number
-    for (let i = 2; i <= Math.sqrt(num); i++) {
+    for (let i = 2; i <= Math.sqrt(number); i++) {
         // If the number is divisible by any other number (excluding 1 and itself), it's not prime
         if (num % i === 0) return false;
     }

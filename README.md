@@ -1,5 +1,7 @@
 Date, 2024/03/30
+
 By Felicity Muhonja Ilavatsa
+
 Description
 This project consists of three JavaScript functions: swapCase, generateArray, and filterPrimes.
 

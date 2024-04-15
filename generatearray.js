@@ -1,16 +1,29 @@
-
-function generateArray(start, end) {
-    // Initialize an empty array to store the  numbers
-    let arr = [];
-    
-    // Loop from the start number to the end number(inclusive)
-    for (let i = start; i <= end; i++) {
-        // Add each number to the array
-        numbers.push(i);
+// Function definition to swap case of characters in a string
+function swapCase(inputString) {
+    // Initialize an empty string to store the swapped characters
+    let swappedString = '';
+    // Iterate through each character in the input string
+    for (let i = 0; i < inputString.length; i++) {
+        // Get the current character
+        let char = inputString[i];
+        // Check if the character is uppercase
+        if (char === char.toUpperCase()) {
+            // If uppercase, convert it to lowercase and add to swappedString
+            swappedString += char.toLowerCase();
+        } else {
+            // If lowercase, convert it to uppercase and add to swappedString
+            swappedString += char.toUpperCase();
+        }
     }
-    // Return the generated array
-    return numbers;
+    // Return the swapped string
+    return swappedString;
 }
 
-console.log(generateArray(4, 7)); // [4, 5, 6, 7]
-console.log(generateArray(-4, 7)); // [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
+// Example input
+let inputString = 'The Quick Brown Fox';
+
+// Function call to swap case
+let outputString = swapCase(inputString);
+
+// Displaying the output
+console.log(outputString);
